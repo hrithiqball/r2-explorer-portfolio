@@ -1,7 +1,8 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "compatibility_date": "2025-04-01",
   "main": "src/index.ts",
-  "name": "r2-explorer-template",
+  "name": "r2-explorer",
   "assets": {
     "directory": "node_modules/r2-explorer/dashboard",
     "binding": "ASSETS",
@@ -10,9 +11,9 @@
   },
   "r2_buckets": [
     {
-      "binding": "bucket",
-      "bucket_name": "r2-explorer-bucket",
-      "preview_bucket_name": "r2-explorer-bucket"
+      "binding": "blog-post",
+      "bucket_name": "blog-post",
+      "preview_bucket_name": "blog-post-preview"
     }
   ],
   "observability": {
